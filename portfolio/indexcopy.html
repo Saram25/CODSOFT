@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">SV</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sahaj Verma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="CSS/images/woman.png" alt="Sahaj Verma profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sahaj Verma</h1>
+        <p class="section__text__p2">Web Developer.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('CSS/images/resume.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+
+          <img
+            src="CSS/images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Saram25'"
+          />
+          <img
+            src="CSS/images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sahaj-verma-93377b1b0/'"
+          />
+          <img
+            src="CSS/images/twitter.png"
+            alt="My Twitter profile"
+            class="icon"
+            onclick="location.href='https://twitter.com/SahajVerma14'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="CSS/images/profile.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+          <div class="text-container">
+            <p>
+              I am currently enrolled as a diligent student at Guru
+              Gobind Singh Indraprastha University, where I am actively
+              pursuing a Bachelor's degree in the field of Information
+              Technology. This academic journey of mine has not only
+              been intellectually enriching but also a pivotal phase of
+              personal growth and development.
+              </p>
+              <br>
+              <p>  In addition to my scholastic endeavors, I also proudly
+                undertake the role of a video supervisor at a distinguished
+                non-governmental organization (NGO). This role has not only
+                allowed me to contribute meaningfully to society but has also
+                granted me invaluable insights into the world beyond academics.
+                As a video supervisor, I am entrusted with the responsibility of
+                capturing and conveying the impactful stories that the NGO strives
+                to tell. </p>
+
+
+          </div>
+        </div>
+
+
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+              <h3 class="skills-sub-title">Web Developement</h3>
+              <img
+                src="CSS/images/web-development.png"
+                alt="Skills icon"
+                class="icon-big"
+              />
+            </div>
+               <div class="details-container">
+                <h3 class="skills-sub-title">Video Editting</h3>
+                <img
+                  src="CSS/images/video-editor.png"
+                  alt="Skills icon"
+                  class="icon-big"
+                />
+                </div>
+      </div>
+    </div>
+
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="CSS/images/portfolio.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="CSS/images/landing.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Landing Page</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="CSS/images/calc.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calculator</h2>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="CSS/images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sahajverma06@gmail.com">sahajverma06@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="CSS/images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sahaj-verma-93377b1b0/">Sahaj Verma</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2023 Sahaj Verma. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
